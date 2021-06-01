@@ -200,7 +200,7 @@ var Canlendar = (function () {
             }
             for (var i = 0; i < this.length; i++) {
                 if (lunarDay > lunarLastDay) {
-                    solarDateObj = new Date(year, month, i + 1); // 当月第一天的日期
+                    solarDateObj = new Date(year, month, i + 2); // 当月第一天的日期
                     lunarDateObj = new functionLibrary.calculateFirstDay(solarDateObj); // 农历
                     lunarYear = lunarDateObj.year; // 农历年
                     lunarMonth = lunarDateObj.month; // 农历月
