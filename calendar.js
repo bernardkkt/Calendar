@@ -113,6 +113,7 @@ var Canlendar = (function () {
             var i, leap = 0, temp = 0;
             var baseDate = new Date(1900, 0, 31);
             var offset = (objDate - baseDate) / 86400000;
+            offset = Math.ceil(offset)  // To round off
             this.dayCycle = offset + 40;
             this.monthCycle = 14;
             for (i = 1900; i < 2050 && offset > 0; i++) {
